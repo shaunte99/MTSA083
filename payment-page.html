@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Poppie 💕</title>
+    <link rel="stylesheet" href="styles/payment.css">
+</head>
+<body>
+    <header>
+        <h1>💕 Vote for Poppie 💕</h1>
+        <p class="subtitle">Your support makes a difference! Choose a voting package below.</p>
+    </header>
+
+    <section class="payment-container">
+        <h2>Select Your Voting Package</h2>
+        <div class="options">
+            <div class="vote-card" data-price="15" data-votes="5">💖 R15 = 5 Votes</div>
+            <div class="vote-card" data-price="60" data-votes="20">💖 R60 = 20 Votes</div>
+            <div class="vote-card" data-price="120" data-votes="60">💖 R120 = 60 Votes</div>
+            <div class="vote-card" data-price="1500" data-votes="1000">💖 R1500 = 1000 Votes</div>
+        </div>
+
+        <h2>Enter Your Payment Details</h2>
+        <form id="payment-form">
+            <label for="name">Cardholder Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <div class="card-details">
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="123" required>
+            </div>
+
+            <button type="submit" class="glow-button">Pay Now 💕</button>
+        </form>
+
+        <p class="note">📢 After payment, send proof to <strong>info@misspageant.co.za</strong></p>
+    </section>
+
+    <script src="scripts/payment.js"></script>
+</body>
+</html>

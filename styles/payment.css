@@ -1,0 +1,131 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1;
+    text-align: center;
+    color: #444;
+}
+
+/* HEADER */
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+    color: white;
+    border-bottom: 4px solid #ff69b4;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+/* PAYMENT SECTION */
+.payment-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 20, 147, 0.2);
+}
+
+/* VOTE OPTIONS */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.vote-card {
+    background: #ff69b4;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.5);
+}
+
+.vote-card:hover, .vote-card.selected {
+    background: #ff1493;
+    transform: scale(1.05);
+}
+
+/* PAYMENT FORM */
+form {
+    text-align: left;
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ff69b4;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.card-details {
+    display: flex;
+    gap: 10px;
+}
+
+.card-details input {
+    width: 48%;
+}
+
+/* PAYMENT BUTTON */
+.glow-button {
+    background-color: #ff1493;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(255, 20, 147, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.glow-button:hover {
+    background-color: #ff69b4;
+    box-shadow: 0px 4px 15px rgba(255, 105, 180, 0.7);
+    transform: scale(1.05);
+}
+
+/* NOTE */
+.note {
+    font-size: 14px;
+    color: #c2185b;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 480px) {
+    .payment-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .vote-card {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
