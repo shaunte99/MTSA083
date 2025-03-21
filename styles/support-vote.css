@@ -1,0 +1,144 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1f1;
+    text-align: center;
+}
+
+/* HEADER STYLING */
+header {
+    background-color: #ffc0cb;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #c2185b;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #c2185b;
+}
+
+.description {
+    font-size: 16px;
+    font-style: italic;
+    color: #444;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* SUPPORT & VOTE SECTION */
+#support-vote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+}
+
+.support-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.support-paragraph {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.vote-button {
+    background-color: #c2185b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.vote-button:hover {
+    background-color: #ff69b4;
+}
+
+.support-image img {
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TESTIMONIALS SECTION */
+#testimonials {
+    background-color: #f1f1f1;
+    padding: 40px 10%;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #444;
+}
+
+.testimonial span {
+    font-weight: bold;
+    color: #c2185b;
+}
+
+/* SOCIAL MEDIA SECTION */
+#socials {
+    padding: 20px;
+}
+
+#socials ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#socials ul li {
+    margin: 10px 0;
+}
+
+#socials a {
+    text-decoration: none;
+    color: #c2185b;
+    font-weight: bold;
+}
+
+#socials a:hover {
+    color: #FFD700;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    #support-vote {
+        flex-direction: column;
+    }
+
+    .support-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .support-image img {
+        max-width: 100%;
+    }
+}

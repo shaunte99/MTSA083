@@ -77,22 +77,20 @@ nav ul li {
     object-fit: cover;
 }
 
-/* GALLERY */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    padding: 20px;
+/* GALLERY BUTTON */
+.gallery-button {
+    background-color: #c2185b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.gallery-grid img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
+.gallery-button:hover {
+    background-color: #ff69b4;
 }
 
 /* VOTE BUTTON */
@@ -157,15 +155,4 @@ nav ul li {
     #hero img {
         max-height: 300px;
     }
-
-    /* GALLERY */
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-
-    /* VOTE BUTTON */
-    .vote-button {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-}
+}  
