@@ -9,21 +9,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // Smooth scroll effect
     document.querySelectorAll(".nav-link").forEach(anchor => {
         anchor.addEventListener("click", function (event) {
-            event.preventDefault();
-            const section = document.querySelector(this.getAttribute("href"));
-            section.scrollIntoView({ behavior: "smooth" });
+            const href = this.getAttribute("href");
 
-            // Remove active class from all
-            document.querySelectorAll(".nav-link").forEach(link => {
-                link.classList.remove("active");
-            });
+            // Check if it's a link to a section or a different page
+            if (href.startsWith("#")) {
+                event.preventDefault();  // Prevent default if it's an anchor link
 
-            // Add active class to the clicked link
-            this.classList.add("active");
+                const section = document.querySelector(href);
+                section.scrollIntoView({ behavior: "smooth" });
 
-            // Close menu on mobile
-            if (window.innerWidth < 768) {
-                navMenu.classList.remove("show");
+                // Remove active class from all
+                document.querySelectorAll(".nav-link").forEach(link => {
+                    link.classList.remove("active");
+                });
+
+                // Add active class to the clicked link
+                this.classList.add("active");
+
+                // Close menu on mobile
+                if (window.innerWidth < 768) {
+                    navMenu.classList.remove("show");
+                }
+            } else {
+                // Let the browser navigate to the page normally if it's not an anchor link
+                // No need to prevent the default behavior here
             }
         });
     });

@@ -67,6 +67,21 @@
     box-shadow: 0 0 10px #ff69b4, 0 0 40px #ff1493;
 }
 
+/* VISITOR COUNT SECTION STYLING */
+#visitor-count {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #0077b6;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#visitor-count span {
+    color: #ff69b4; /* Optional: Customize text color */
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .vote-title {
