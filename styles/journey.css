@@ -1,0 +1,147 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1f1;
+    text-align: center;
+}
+
+/* HEADER STYLING */
+header {
+    background-color: #ffc0cb;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    animation: typewriter 4s steps(40) 1s 1 normal both;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #333;
+}
+
+/* Add typewriter effect */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #c2185b;
+}
+
+.description {
+    font-size: 16px;
+    font-style: italic;
+    color: #444;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* PAGEANT JOURNEY SECTION */
+#journey {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#journey p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* IMAGE GALLERY */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* QUOTE STYLING */
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #c2185b;
+    border-left: 4px solid #c2185b;
+    padding-left: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+/* BUTTONS */
+.gallery-button,
+.vote-button {
+    background-color: #c2185b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.gallery-button:hover,
+.vote-button:hover {
+    background-color: #ff69b4;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    /* HEADER */
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    /* PAGEANT JOURNEY */
+    #journey p {
+        font-size: 14px;
+    }
+
+    /* IMAGE GALLERY */
+    .image-gallery img {
+        max-width: 100%;
+    }
+
+    /* VIDEO */
+    video {
+        max-width: 100%;
+    }
+}
+
