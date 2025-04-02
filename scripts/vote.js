@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1000);
 
     // Manually update the visitor count (change this manually)
-    let manualVisitCount = 254;  // Change this value manually as needed
+    let manualVisitCount = 587;  // Change this value manually as needed
 
     // Display the manual visitor count
     document.getElementById("visitCount").innerText = manualVisitCount;
